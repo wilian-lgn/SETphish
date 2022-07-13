@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+ /* border: 1px solid #000;  */
+}
+
+.particles {
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: yellow;
+  position: fixed;
+  z-index: -1;
+}
+
+.particles:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height:100vh;
+  background-image: linear-gradient(90deg, pink, #748eff);
+  z-index: -2;
+}
+
+.container-md {
+  background-color: #748eff;
+}
+
+.image_love {
+  width: 200px;
+  height: 150px;
+  border-radius: 10px;
+  margin: auto;
+  display: block;
+}
+
+.columna1-1,
+.columna1-2,
+.columna2-1,
+.columna2-2 {
+  padding: 20px 0;
+}
+
+.video-titanic {
+  width: 250px;
+  height: 180px;
+  margin: auto;
+  display: block;
+  border-radius: 100px;
+}
+
+.columna1-2 {
+  text-align: center;
+  margin: auto;
+  display: block;
+  font-family: "Lemon Tea", sans-serif;
+}
+
+.columna1-2 h1 {
+  transition: 500ms;
+  animation: titulo 1s infinite alternate;
+}
+
+@keyframes titulo {
+  0% {
+    color: red;
+  }
+  100% {
+    color: blue;
+  }
+}
+
+.columna2-1 {
+  text-align: center;
+  font-family: "Lemon Tea", sans-serif;
+}
+
+.columna2-2 {
+  margin: auto;
+  display: block;
+}
+
+@font-face {
+  font-family: "Lemon Tea";
+  src: url("../fonts/Lemon-Tea.ttf");
+}
